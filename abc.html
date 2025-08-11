@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="container">
+
+    <div class="card">
+
+        <div class="card-hero">
+            <div class="img-wrapper">
+                <img src="/bag122.jpeg" alt="">
+
+                <div class="card-content">
+                    <h4>
+                        Kaju Katli
+                    </h4>
+                    <p>
+                        Delicious diamond-shaped sweet made from cashew nuts and sugar, with a silver foil topping. A
+                        classic favorite for festivals and celebrations.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-bottom">
+            <span class="card-b-l">Traditional</span>
+            <span class="card-b-r">22.99$</span>
+        </div>
+
+    </div>
+
+
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(132, 126, 126);
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            height: 24rem;
+            width: 15rem;
+            border-radius: 1.5rem;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .card-hero:hover img {
+            cursor: pointer;
+            transition: 0.5s ease;
+            transform: scale(1.15);
+        }
+        .card-hero:hover img + .card-content{
+            cursor: pointer;
+            opacity: 90%;
+            backdrop-filter: saturate(0.5);
+            transition: 0.5s ease;
+        }
+
+        .card-hero {
+            overflow: hidden;
+        }
+
+        .card-hero img {
+            height: 100%;
+            width: 100%;
+            transition: 0.5s ease;
+        }
+        
+        .card-content {
+            position: absolute;
+            opacity: 0%;
+            z-index: 10;
+            bottom: 0;
+            color: white;
+            padding: 1rem;
+            transition: 0.5s ease;
+        }
+
+        
+        .card-content p {
+            font-size: small;
+        }
+
+        .card-bottom {
+            margin-top: 0.6rem;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-b-l {
+            background-color: rgb(227 237 209 / var(--tw-bg-opacity, 1));
+            border-radius: 2rem;
+            font-size: small;
+            padding-inline: 0.9rem;
+            padding-block: 0.2rem;
+            color: rgb(84 104 35 / var(--tw-text-opacity, 1));
+        }
+
+        .card-b-r {
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        .img-wrapper {
+            position: relative;
+            z-index: 5;
+            overflow: hidden;
+        }
+    </style>
+</body>
+
+</html>
